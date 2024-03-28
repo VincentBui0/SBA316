@@ -1,0 +1,8 @@
+.titlebox {
+    display: flex;
+    justify-content: space-between;
+}
+  .studentContainer {
+    border: solid black;
+    padding: 1em;
+}
