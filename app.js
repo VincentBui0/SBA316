@@ -4,3 +4,18 @@ const keyboardDiv = document.querySelector(".keyboard");
 const hangmanImage = document.querySelector(".hangman-box img");
 const gameModal = document.querySelector(".game-modal");
 const playAgainBtn = gameModal.querySelector("button");
+
+// Initializing game variables
+let currentWord, correctLetters, wrongGuessCount;
+const maxGuesses = 6;
+
+const resetGame = () => {
+  // Ressetting game variables and UI elements
+  correctLetters = [];
+  wrongGuessCount = 0;
+  hangmanImage.src = "images/hangman-0.svg";
+  guessesText.innerText = `${wrongGuessCount} / ${maxGuesses}`;
+  wordDisplay.innerHTML = currentWord.split("").map(() => `<li class="letter"></li>`).join("");
+  keyboardDiv.querySelectorAll("button").forEach(btn => btn.disabled = false);
+  gameModal.classList.remove("show");
+}
