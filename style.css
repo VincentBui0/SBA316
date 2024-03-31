@@ -56,3 +56,22 @@ body {
   margin: -40px 0 35px;
   border-color: transparent;
 }
+.game-box h4 {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.game-box h4 b {
+  font-weight: 600;
+}
+.game-box .guesses-text b {
+  color: #ff0000;
+}
+.game-box .keyboard {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  justify-content: center;
+}
