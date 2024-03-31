@@ -49,8 +49,10 @@ const initGame = (button, clickedLetter) => {
         [...currentWord].forEach((letter, index) => {
             if(letter === clickedLetter) {
                 correctLetters.push(letter);
-                wordDisplay.querySelectorAll("li")[index].innerText = letter;
-                wordDisplay.querySelectorAll("li")[index].classList.add("guessed");
+                // Using parent-child-sibling relationship to navigate to the corresponding <li> element
+                const letterElement = button.parentNode.parentNode.querySelector(`.word-display .letter:nth-child(${index + 1})`);
+                letterElement.innerText = letter;
+                letterElement.classList.add("guessed");
             }
         });
     } else {
