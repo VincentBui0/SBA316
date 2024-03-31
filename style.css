@@ -1,8 +1,27 @@
-.titlebox {
-    display: flex;
-    justify-content: space-between;
+/* Importing Google font - Open Sans */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
 }
-  .studentContainer {
-    border: solid black;
-    padding: 1em;
+body {
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #5E63BA;
+}
+.container {
+    display: flex;
+    width: 850px;
+    gap: 70px;
+    padding: 60px 40px;
+    background: #fff;
+    border-radius: 10px;
+    align-items: flex-end;
+    justify-content: space-between;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
